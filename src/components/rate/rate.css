@@ -1,0 +1,10 @@
+.Rate {
+
+        display: flex;
+        font-size: 30px;
+        margin: 0;
+        gap: 2px;
+        @media screen and (max-width: 900px) {
+            font-size: 20px;
+        }
+}

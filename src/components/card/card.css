@@ -1,0 +1,57 @@
+.gallery_card{
+    position: relative;
+    width: 30%;
+    height: 320px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    border-radius:10px;
+   
+    @media screen and (max-width: 1000px){
+        width: 40%;
+        height:330px;
+        border-radius: 10px;  
+    }
+    @media screen and (max-width: 800px){
+        width: 90%;
+        height: 200px;
+    }
+    @media screen and (max-width: 700px){
+        width: 100%;
+    }
+}
+.degrade {
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5));
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.gallery_card:hover{
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 8px rgb(0, 0, 0);
+        
+}
+
+.image-card{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+    }
+
+
+.title-card{
+
+        z-index: 20;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        right: 20px;
+        font-weight: 500;
+        font-size: clamp(12px, 3vw, 18px);
+        color: floralwhite;
+    }

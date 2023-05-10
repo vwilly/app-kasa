@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styles/App.css';
+import Home from './pages/home';
+import Accomodation from './pages/accomodation/index';
+import About from './pages/about/Index';
+import Error from './pages/notFound/index';
+import {  Routes, Route } from 'react-router-dom'
+import datas from "./data/data";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ 
+
+export default function App() {
+    return (
+        <>
+            <Routes>
+                <Route path="/" element={<Home datas={datas} />} />
+                <Route path="/Accomodation/:id" element={<Accomodation datas={datas} />} />
+                <Route path="/About" element={<About />} />
+				<Route path="/*" element={<Error />} />
+            </Routes>
+        </>
+    );
 }
 
-export default App;

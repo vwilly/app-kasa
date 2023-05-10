@@ -1,0 +1,48 @@
+.home {
+    position: relative;
+    padding: 0%;
+    
+
+background: #FFFFFF;
+}
+
+
+
+.banner-home {
+    position: relative;
+    object-fit: cover;
+    filter: brightness(70%);
+    border-radius: 25px;
+    width: 100%;
+}
+
+.titleHome {
+    position: absolute;
+    padding-top: 5%;
+    font-weight: 500;
+    font-size: 3rem;
+    color: white;
+    margin: 1.25rem;
+   
+    @media screen and (max-width: 1250px){
+        font-size: 32px;
+        line-height:24px;
+        
+    }
+
+    @media screen and (max-width: 900px){
+        font-size: 24px;
+        line-height:24px;
+        padding-top: 6%
+    }
+    @media screen and (max-width: 500px){
+        padding-top: 10%;
+        font-weight:400;
+    }
+}
+
+
+
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), ; //url('../../assets/cover.png')
+    background-position: center;
+    background-size: cover;*/

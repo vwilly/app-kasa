@@ -1,0 +1,23 @@
+
+
+.home_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+    gap:50px;
+    padding: 50px;
+    background-color: #F7F7F7;
+
+    position: relative;
+
+    @media screen and (max-width: 1300px){
+        padding:0px; 
+        gap: 20px;
+        background-color: white;
+    }
+
+}

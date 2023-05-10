@@ -1,0 +1,33 @@
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 223px;
+    width: 100%;
+    @media screen and (max-width: 500px){
+        margin: 20px auto;
+        height: 100px;
+    }
+    @media screen and (max-width: 1250px){
+        margin: 20px auto;
+        height: 150px;
+    }
+}
+
+
+/*.slogan {
+    position: absolute;
+    padding-top: 2%;
+    
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 142.6%;
+
+}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/cover.png');
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: darken;
+*/
